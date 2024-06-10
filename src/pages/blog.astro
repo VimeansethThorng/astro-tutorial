@@ -1,4 +1,5 @@
 ---
+import BlogPost from "../components/BlogPost.astro";
 import { literal } from "astro/zod";
 import BaseLayout from "../layouts/BaseLayout.astro"
 
@@ -13,7 +14,8 @@ const pageTitle = "Blog"
         <li><a href="/posts/post-3"> Post 3</a></li> -->
 
         {
-            allPosts.map((post) => <li><a href="{post.url}">{post.frontmatter.title}</a></li>)
+            // allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)
+            allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)
         }
     </ul>
 
