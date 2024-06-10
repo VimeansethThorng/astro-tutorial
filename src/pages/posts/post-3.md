@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkDownPostLayout.astro
-title: My Third Blog Post
+title: Post 3
 author: Astro Learner
 description: "I had some challenges, but asking in the community really helped!"
 image:
